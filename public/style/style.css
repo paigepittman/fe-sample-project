@@ -1,0 +1,60 @@
+* {
+  font-family: 'Lato', sans-serif;
+   box-sizing: border-box;
+}
+
+
+
+/*------- Nav Component --------*/
+
+
+
+/*------- Shop Component --------*/
+
+
+.card {
+  text-align: center;
+  height: 30%;
+  font-size: 11px;
+}
+
+.card .card-content {
+  padding: 13px;
+}
+
+ .card:hover {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: .5px;
+  border-color: #1c39d0;
+}
+
+.card:hover img{
+ box-sizing: border-box;
+ border-style: solid;
+ border-width: .5px .5px 0 .5px;
+ border-color: #1c39d0;
+
+}
+
+.card:hover .add-button {
+  border-color: #1c39d0;
+}
+
+.add-button {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: .5px;
+  padding: 4px 15px;
+  color: black;
+
+}
+
+#price {
+  font-size: 16px;
+  margin: 5px;
+}
+
+
+
+/*------- Cart Component --------*/
