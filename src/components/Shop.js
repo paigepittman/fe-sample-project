@@ -21,7 +21,7 @@ class Shop extends Component {
                 <div class="card-content">
                   <p id="name">{product.name}</p>
 
-                <p id="price">  ${product.price} </p>
+                  <p id="price">  ${product.price} </p>
 
                   <a class="add-button" href="#">Add to cart</a>
                 </div>
