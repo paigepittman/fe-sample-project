@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import products from '../product-payload.json';
 
 
@@ -8,9 +7,6 @@ class Shop extends Component {
   state = {products: products.products}
 
 
-  componentWillReceiveProps(props) {
-    console.log(props)
-  }
 
   _addDec = (price) => {
     var string = JSON.stringify(price);
@@ -22,7 +18,6 @@ class Shop extends Component {
 
 
   render() {
-    console.log(this.props)
     return(
     <div className="container">
       <div className="row header">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
-import Shop from './Shop';
+import Nav from './components/Nav';
+import Shop from './components/Shop';
 
 class Main extends Component {
 
