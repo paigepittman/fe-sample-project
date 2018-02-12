@@ -3,11 +3,48 @@
    box-sizing: border-box;
 }
 
+.container {
+  width: 85%;
+}
+
 
 
 /*------- Nav Component --------*/
 
+.navbar {
+  background-color: #1c39d0;
+  color: white;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
 
+#shop-link {
+  padding: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+#cart-link {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  color: white;
+}
+
+#items {
+  background: white;
+  color: black;
+  padding: 1px 9px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: thin;
+  border-color: white;
+}
 
 /*------- Shop Component --------*/
 
