@@ -23,7 +23,7 @@ class Main extends Component {
       var num = string.slice(0, string.length -2);
       var decimal = num + "." + dec;
       total = total + parseFloat(decimal);
-      this.setState({total: total})
+      this.setState({total: total.toFixed(2)})
     }
 
   }
