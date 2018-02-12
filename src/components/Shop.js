@@ -7,23 +7,43 @@ class Shop extends Component {
 
   state = {products: products.products}
 
+
+  componentWillReceiveProps(props) {
+    console.log(props)
+  }
+
+  _addDec = (price) => {
+    var string = JSON.stringify(price);
+    var dec = string.slice(string.length - 2);
+    var num = string.slice(0, string.length -2);
+    var decimal = num + "." + dec;
+    return decimal;
+  }
+
+
   render() {
+    console.log(this.props)
     return(
-    <div class="container">
-      <div class="row products-view">
+    <div className="container">
+      <div className="row header">
+        <div className="col s12 m12 card-col" style={{"font-size": "24px", "color": "#494949"}}>
+          Shop our featured collection
+        </div>
+      </div>
+      <div className="row products-view">
         {this.state.products.map((product,i) =>
-            <div class="col s12 m3">
-              <div class="card">
-                <div class="card-image">
+            <div className="col s12 m3">
+              <div className="card">
+                <div className="card-image">
                   <img src={"./images/" + product.filename} />
-                  <span class="card-title"></span>
+                  <span className="card-title"></span>
                 </div>
-                <div class="card-content">
+                <div className="card-content">
                   <p id="name">{product.name}</p>
 
-                  <p id="price">  ${product.price} </p>
+                  <p id="price">  ${this._addDec(product.price)} </p>
 
-                  <a class="add-button" href="#">Add to cart</a>
+                  <a className="add-button" onClick={() => this.props._addItem(product)}>Add to cart</a>
                 </div>
               </div>
             </div>
