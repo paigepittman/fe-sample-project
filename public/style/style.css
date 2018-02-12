@@ -110,6 +110,15 @@ div.col.s12.m3 {
   margin: 5px;
 }
 
+button.btn.toast {
+  background-color: rgba(0,0,0,0);
+    border: none;
+    box-shadow: none;
+    width: 70%;
+    padding: 0px;
+    margin: 0;
+}
+
 
 
 /*------- Cart Component --------*/

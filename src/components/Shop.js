@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Toast } from 'react-materialize';
 import products from '../product-payload.json';
 
 
@@ -37,8 +38,7 @@ class Shop extends Component {
                   <p id="name">{product.name}</p>
 
                   <p id="price">  ${this._addDec(product.price)} </p>
-
-                  <a className="add-button" onClick={() => this.props._addItem(product)}>Add to cart</a>
+                    <a className="add-button" onClick={() => this.props._addItem(product)}>Add to cart</a>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './components/Nav';
 import Shop from './components/Shop';
+import { Toast } from 'react-materialize';
 
 class Main extends Component {
 
@@ -11,6 +12,7 @@ class Main extends Component {
 
 
   _addItem = (item) => {
+
     var items = this.state.items;
     items.push(item);
     this.setState({items: items});
