@@ -26,7 +26,7 @@ class Shop extends Component {
     return(
     <div className="container">
       <div className="row header">
-        <div className="col s12 m12" style={{"font-size": "24px", "color": "#494949"}}>
+        <div className="col s12 m12 card-col" style={{"font-size": "24px", "color": "#494949"}}>
           Shop our featured collection
         </div>
       </div>
