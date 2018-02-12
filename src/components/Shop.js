@@ -12,9 +12,12 @@ class Shop extends Component {
     console.log(props)
   }
 
-  _addItem = (item) => {
-    console.log(this.props)
-
+  _addDec = (price) => {
+    var string = JSON.stringify(price);
+    var dec = string.slice(string.length - 2);
+    var num = string.slice(0, string.length -2);
+    var decimal = num + "." + dec;
+    return decimal;
   }
 
 
@@ -38,9 +41,9 @@ class Shop extends Component {
                 <div className="card-content">
                   <p id="name">{product.name}</p>
 
-                  <p id="price">  ${product.price} </p>
+                  <p id="price">  ${this._addDec(product.price)} </p>
 
-                  <a className="add-button" onClick={() => this._addItem(product)}>Add to cart</a>
+                  <a className="add-button" onClick={() => this.props._addItem(product)}>Add to cart</a>
                 </div>
               </div>
             </div>

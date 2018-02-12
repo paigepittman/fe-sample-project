@@ -95,3 +95,46 @@
 
 
 /*------- Cart Component --------*/
+
+li {
+  style: none;
+}
+
+.thumb-img {
+  height: 60px;
+  width: 60px;
+
+}
+
+.thumb-img img {
+  height: 100%;
+}
+
+.cart-div {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.item-info {
+  font-size: 14px;
+}
+
+td.item-info, td.your-total {
+  text-align: right;
+
+}
+#price-td {
+  font-size: 16px;
+}
+
+#total-row {
+  font-size: 20px;
+}
+
+#items-row {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #494949;
+}

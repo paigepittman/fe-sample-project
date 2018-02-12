@@ -25,7 +25,7 @@ class Nav extends Component {
           }}>
             Shop
           </span></a>
-          <Cart items={this.props.items}/>
+          <Cart items={this.props.items} total={this.props.total}/>
         </div>
 
       )
@@ -37,7 +37,7 @@ class Nav extends Component {
           <a href="#"><span id="shop-link">
             Shop
           </span></a>
-          <Cart items={this.props.items}/>
+          <Cart items={this.props.items} total={this.props.total}/>
         </div>
       )
     }
